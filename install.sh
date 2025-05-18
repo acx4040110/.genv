@@ -59,6 +59,7 @@ if [ "$ANSWER" = "Y" ] || [ "$ANSWER" = "y" ]; then
         git config --global user.email $EMAIL
         git config --global user.name $NAME
 fi
+git config --global core.editor "vim"
 
 read -p "would you want to install basic packages ?[Y/N]" ANSWER
 if [ "$ANSWER" = "Y" ] || [ "$ANSWER" = "y" ]; then
